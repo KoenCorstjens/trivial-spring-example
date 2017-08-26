@@ -1,8 +1,9 @@
 package eu.corstjens.spring.example.entities;
 
-import lombok.Data;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class KnackRoeselare implements Team {
     private String name= "Knack Roeselare";
 

@@ -1,8 +1,8 @@
 package eu.corstjens.spring.example.entities;
 
-import lombok.Data;
+import org.springframework.stereotype.Component;
 
-
+@Component
 public class NolikoMaaseik implements Team {
     private String name = "Noliko Maaseik";
 
