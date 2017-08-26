@@ -20,6 +20,8 @@ public class VolleybalGame implements Game{
 
     @Override
     public String playGame() {
-        return Math.random() > 0.5 ? home.getName() : away.getName();
+        String result = String.format("Game %s at %s", away.getName(), home.getName());
+        result += String.format(" winner is %s", Math.random() > 0.5 ? home.getName() : away.getName());
+        return result;
     }
 }
